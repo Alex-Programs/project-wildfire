@@ -1,8 +1,29 @@
 ﻿using System;
 
-public class GetApi
+public class Api
 {
-	public GetApi()
+	public void Fetch()
 	{
+    
 	}
+    
+    public void Parse()
+    {
+
+    }
+
+    public void GeoFilter()
+    {
+
+    }
+
+    public Dictionary Export()
+    {
+
+    }
+
+    public static void main()
+    {
+
+    }
 }
