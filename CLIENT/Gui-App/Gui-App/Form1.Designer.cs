@@ -243,11 +243,10 @@
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(3, 16);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(197, 13);
-            this.label11.TabIndex = 3;
+            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.TabIndex = 0;
             this.label11.Text = "STUFF GOES HERE, SEE UI MOCKUP";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
@@ -263,7 +262,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -294,8 +292,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label11;
     }
 }
 

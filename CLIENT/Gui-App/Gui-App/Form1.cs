@@ -19,7 +19,7 @@ namespace Gui_App
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-
+            //Settings
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -57,12 +57,12 @@ namespace Gui_App
 
         }
 
-        private void label11_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void label11_Click(object sender, EventArgs e)
         {
 
         }
