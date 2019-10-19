@@ -22,8 +22,12 @@ public class Api
 
     }
 
-    public static void main()
+    public GetAndProcess()
     {
 
+    }
+    public static void main()
+    {
+        //every two hours get and process, different functions so you can force update
     }
 }
