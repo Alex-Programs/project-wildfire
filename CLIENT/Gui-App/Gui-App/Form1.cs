@@ -89,5 +89,9 @@ namespace Gui_App
         {
 
         }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
