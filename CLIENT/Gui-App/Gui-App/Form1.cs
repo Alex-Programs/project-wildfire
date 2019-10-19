@@ -15,6 +15,7 @@ namespace Gui_App
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Ex Astris";
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -59,10 +60,32 @@ namespace Gui_App
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            pictureBox1.BackColor = Color.FromArgb(255, 0, 0);
+
 
         }
 
         private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
         {
 
         }
