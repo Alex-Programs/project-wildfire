@@ -16,6 +16,7 @@ namespace Gui_App
         {
             InitializeComponent();
             this.Text = "Ember";
+            //label16.text = "Preparing to fetch data";
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -92,6 +93,30 @@ namespace Gui_App
 
         private void label16_Click(object sender, EventArgs e)
         {
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label11_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        public void setTable(string latitude, string longitude, string brightness, string scan, string track, string date, string time, string satellite, string confidence, string version, string brightness_t31, string FRP)
+        {
+            //sets table values
+            //note: skipping day/night, version, 
+
+            //tableLayoutPanel1.Controls.Add(new Label {latitude, longitude, brightness, scan, track, date, time, satellite, confidence, version, brightness_t31, FRP});
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+            //note: skipping day/night, version, 
         }
     }
 }
