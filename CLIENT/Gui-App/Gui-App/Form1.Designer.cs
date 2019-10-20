@@ -43,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -216,6 +216,16 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Status";
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(7, 29);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(34, 13);
+            this.label16.TabIndex = 9;
+            this.label16.Text = "Thing";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -330,16 +340,6 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(7, 29);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(34, 13);
-            this.label16.TabIndex = 9;
-            this.label16.Text = "Thing";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // Form1
             // 

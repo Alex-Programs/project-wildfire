@@ -15,7 +15,7 @@ namespace Gui_App
         public Form1()
         {
             InitializeComponent();
-            this.Text = "Ex Astris";
+            this.Text = "Ember";
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
