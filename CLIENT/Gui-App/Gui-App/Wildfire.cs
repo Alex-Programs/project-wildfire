@@ -15,7 +15,7 @@ namespace Gui_App
         public float track;
         public string acq_date;
         public string acq_time;
-        public string satelite;
+        public string satellite;
         public int confidence;
         public string version;
         public float bright_t31;
