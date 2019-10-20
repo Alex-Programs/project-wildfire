@@ -7,18 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Gui_App
 {
     public partial class Form1 : Form
     {
-        protected static int DataTableRowNumber = 0;
+        protected static int DataTableRowNumber = 1;
 
         public Form1()
         {
             InitializeComponent();
             this.Text = "Ember";
+            this.FetchData();
             //label16.text = "Preparing to fetch data";
+        }
+
+        async void FetchData()
+        {
+            await Api.Fetch();
+            foreach (var i in Api.ApiData.Values)
+            {
+                this.createTableRow(i);
+            }
+            Debug.WriteLine("Sent create signal");
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -28,7 +40,7 @@ namespace Gui_App
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -112,9 +124,15 @@ namespace Gui_App
 
             //sets table values
             //note: skipping day/night, version,
-
+            Debug.WriteLine("Received, adding now");
             createTableColumn(DataTableRowNumber, 0, ThisWildfire.latitude);
             createTableColumn(DataTableRowNumber, 1, ThisWildfire.longitude);
+            createTableColumn(DataTableRowNumber, 2, ThisWildfire.scan);
+            createTableColumn(DataTableRowNumber, 3, ThisWildfire.track);
+            createTableColumn(DataTableRowNumber, 4, ThisWildfire.acq_date);
+            createTableColumn(DataTableRowNumber, 5, ThisWildfire.acq_time);
+
+            Debug.WriteLine("Added");
 
             // Incremenet the row number...
             DataTableRowNumber = DataTableRowNumber++;
@@ -122,9 +140,11 @@ namespace Gui_App
 
         public void createTableColumn(int RowNumber, int ColNumber, string ColumnValue)
         {
+            Debug.WriteLine("Creating table column...");
             Label newTableLabel = new Label();
             newTableLabel.Text = ColumnValue;
             tableLayoutPanel1.Controls.Add(newTableLabel, ColNumber, RowNumber);
+            Debug.WriteLine("Created table column.");
         }
 
         private void label14_Click(object sender, EventArgs e)

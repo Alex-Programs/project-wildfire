@@ -15,9 +15,6 @@ namespace Gui_App
         [STAThread]
         static void Main()
         {
-            Api.Fetch();
-            Debug.WriteLine(Api.ApiData);
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

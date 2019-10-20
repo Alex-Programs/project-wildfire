@@ -5,14 +5,15 @@ using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Gui_App
 {
     public class Api
     {
-        public static List<Wildfire> ApiData;
+        public static IDictionary<string, Wildfire> ApiData;
 
-        public static async void Fetch()
+        public static async Task Fetch()
         {
             //Fetch data from ben's api, code taken from project Crazy Norwegian
             HttpWebRequest EmberRequest = (HttpWebRequest)WebRequest.Create("http://ember.benargo.co.uk/");
@@ -27,7 +28,7 @@ namespace Gui_App
                     Debug.WriteLine("Awaiting response from API...");
                     string ResponseContent = await ResponseReader.ReadToEndAsync();
                     Debug.WriteLine(ResponseContent);
-                    ApiData = JsonConvert.DeserializeObject<List<Wildfire>>(ResponseContent);
+                    ApiData = JsonConvert.DeserializeObject<Dictionary<string, Wildfire>>(ResponseContent);
                     Debug.WriteLine(ApiData);
                 }
             }
@@ -46,10 +47,6 @@ namespace Gui_App
             //parse data into *
         }
 
-        public void GeoFilter()
-        {
-            //make sure it's in Indonesia
-        }
 
         //public Dictionary Export()
         //{
