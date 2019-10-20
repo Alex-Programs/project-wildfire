@@ -134,8 +134,9 @@ namespace Gui_App
 
             Debug.WriteLine("Added");
 
-            // Incremenet the row number...
-            DataTableRowNumber = DataTableRowNumber++;
+            // Increment the row number...
+            DataTableRowNumber = DataTableRowNumber + 1;
+            Debug.WriteLine($"DataTableRowNumber {DataTableRowNumber}");
         }
 
         public void createTableColumn(int RowNumber, int ColNumber, string ColumnValue)
