@@ -12,6 +12,8 @@ namespace Gui_App
 {
     public partial class Form1 : Form
     {
+        protected static int DataTableRowNumber = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -105,13 +107,24 @@ namespace Gui_App
 
         }
 
-        public void setTable(string latitude, string longitude, string brightness, string scan, string track, string date, string time, string satellite, string confidence, string version, string brightness_t31, string FRP)
+        public void createTableRow(Wildfire ThisWildfire)
         {
+
             //sets table values
-            //note: skipping day/night, version, 
+            //note: skipping day/night, version,
 
-            //tableLayoutPanel1.Controls.Add(new Label {latitude, longitude, brightness, scan, track, date, time, satellite, confidence, version, brightness_t31, FRP});
+            createTableColumn(DataTableRowNumber, 0, ThisWildfire.latitude);
+            createTableColumn(DataTableRowNumber, 1, ThisWildfire.longitude);
 
+            // Incremenet the row number...
+            DataTableRowNumber = DataTableRowNumber++;
+        }
+
+        public void createTableColumn(int RowNumber, int ColNumber, string ColumnValue)
+        {
+            Label newTableLabel = new Label();
+            newTableLabel.Text = ColumnValue;
+            tableLayoutPanel1.Controls.Add(newTableLabel, ColNumber, RowNumber);
         }
 
         private void label14_Click(object sender, EventArgs e)
