@@ -1,2 +1,4 @@
 
-CLIENT/Gui-App/.vs/Gui-App/v16/Server/sqlite3/db.lock
+CLIENT/Gui-App/.vs
+CLIENT/Gui-App/Gui-App/obj/Debug/Gui-App.csprojAssemblyReference.cache
+CLIENT/Gui-App/Gui-App/obj/Debug/Gui-App.csproj.CoreCompileInputs.cache
