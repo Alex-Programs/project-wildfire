@@ -1,9 +1,0 @@
-C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\bin\Debug\Gui-App.exe.config
-C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\bin\Debug\Gui-App.exe
-C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\bin\Debug\Gui-App.pdb
-C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Debug\Gui-App.csprojAssemblyReference.cache
-C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Debug\Gui_App.Form1.resources
-C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Debug\Gui_App.Properties.Resources.resources
-C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Debug\Gui-App.csproj.GenerateResource.cache
-C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Debug\Gui-App.exe
-C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Debug\Gui-App.pdb
