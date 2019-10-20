@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,7 +15,8 @@ namespace Gui_App
         [STAThread]
         static void Main()
         {
-            Api EmberApi = new Api();
+            Api.Fetch();
+            Debug.WriteLine(Api.ApiData);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
