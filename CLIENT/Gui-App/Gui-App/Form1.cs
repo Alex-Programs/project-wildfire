@@ -16,6 +16,7 @@ namespace Gui_App
         {
             InitializeComponent();
             this.Text = "Ember";
+            //label16.text = "Preparing to fetch data";
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
