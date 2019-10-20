@@ -14,9 +14,10 @@ namespace Gui_App
         [STAThread]
         static void Main()
         {
+            Api EmberApi = new Api();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Api());
             Application.Run(new Form1());
         }
     }
