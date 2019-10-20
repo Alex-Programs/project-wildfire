@@ -131,6 +131,10 @@ namespace Gui_App
             createTableColumn(DataTableRowNumber, 3, ThisWildfire.track);
             createTableColumn(DataTableRowNumber, 4, ThisWildfire.acq_date);
             createTableColumn(DataTableRowNumber, 5, ThisWildfire.acq_time);
+            createTableColumn(DataTableRowNumber, 6, ThisWildfire.confidence);
+            createTableColumn(DataTableRowNumber, 7, ThisWildfire.version);
+            createTableColumn(DataTableRowNumber, 8, ThisWildfire.bright_t31);
+            createTableColumn(DataTableRowNumber, 9, ThisWildfire.frp);
 
             Debug.WriteLine("Added");
 
