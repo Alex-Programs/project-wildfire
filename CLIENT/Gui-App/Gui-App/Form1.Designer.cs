@@ -238,9 +238,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(427, 35);
+            this.button2.Location = new System.Drawing.Point(427, 19);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 40);
+            this.button2.Size = new System.Drawing.Size(200, 56);
             this.button2.TabIndex = 7;
             this.button2.Text = "Force API Update";
             this.button2.UseVisualStyleBackColor = true;
@@ -443,8 +443,9 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox5);
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Ex Astris";
+            this.Text = "Ember";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
