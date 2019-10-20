@@ -8,18 +8,18 @@ namespace Gui_App
 {
     public class Wildfire
     {
-        public float latitude;
-        public float longitude;
-        public float brightness;
-        public float scan;
-        public float track;
+        public string latitude;
+        public string longitude;
+        public string brightness;
+        public string scan;
+        public string track;
         public string acq_date;
         public string acq_time;
         public string satellite;
-        public int confidence;
+        public string confidence;
         public string version;
-        public float bright_t31;
-        public float frp;
-        public char daynight;
+        public string bright_t31;
+        public string frp;
+        public string daynight;
     }
 }

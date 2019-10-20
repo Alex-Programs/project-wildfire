@@ -104,5 +104,19 @@ namespace Gui_App
         {
 
         }
+
+        public void setTable(string latitude, string longitude, string brightness, string scan, string track, string date, string time, string satellite, string confidence, string version, string brightness_t31, string FRP)
+        {
+            //sets table values
+            //note: skipping day/night, version, 
+
+            //tableLayoutPanel1.Controls.Add(new Label {latitude, longitude, brightness, scan, track, date, time, satellite, confidence, version, brightness_t31, FRP});
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+            //note: skipping day/night, version, 
+        }
     }
 }
