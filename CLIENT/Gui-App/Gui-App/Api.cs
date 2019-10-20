@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Net.Http;
@@ -9,9 +10,9 @@ namespace Gui_App
 {
     public class Api
     {
-        protected IDictionary<string, string> ApiData;
+        public static List<Wildfire> ApiData;
 
-        public async void Main()
+        public static async void Fetch()
         {
             //Fetch data from ben's api, code taken from project Crazy Norwegian
             HttpWebRequest EmberRequest = (HttpWebRequest)WebRequest.Create("http://ember.benargo.co.uk/");
@@ -19,17 +20,24 @@ namespace Gui_App
             EmberRequest.Accept = "application/json";
             try
             {
+                Debug.WriteLine("Requesting data from http://ember.benargo.co.uk...");
                 WebResponse Response = await EmberRequest.GetResponseAsync();
                 using (StreamReader ResponseReader = new StreamReader(Response.GetResponseStream()))
                 {
+                    Debug.WriteLine("Awaiting response from API...");
                     string ResponseContent = await ResponseReader.ReadToEndAsync();
-                    ApiData = JsonConvert.DeserializeObject<Dictionary<string, string>>(ResponseContent);
-                    Console.WriteLine(ApiData);
+                    Debug.WriteLine(ResponseContent);
+                    ApiData = JsonConvert.DeserializeObject<List<Wildfire>>(ResponseContent);
+                    Debug.WriteLine(ApiData);
                 }
             }
             catch (WebException ex)
             {
-                Console.WriteLine($"Web exception {ex}");
+                Debug.WriteLine($"WebException {ex}");
+            }
+            catch (JsonReaderException ex)
+            {
+                Debug.WriteLine($"JsonReaderException {ex}");
             }
         }
 
