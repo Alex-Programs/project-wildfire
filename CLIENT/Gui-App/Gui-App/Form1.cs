@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Threading;
 
 namespace Gui_App
 {
@@ -21,11 +22,11 @@ namespace Gui_App
             this.Text = "Ember Client Program";
             pictureBox1.Visible = true;
             this.FetchData();
-            
         }
 
         async void FetchData()
         {
+            pictureBox1.Visible = true;
             SetProgrammingStatus("Resetting Table");
             DataTableRowNumber = 0;
             ResetTable();
@@ -34,7 +35,7 @@ namespace Gui_App
 
             SetProgrammingStatus("Fetching Data");
             await Api.Fetch();
-            pictureBox1.Visible = false;
+            
 
 
             foreach (var i in Api.ApiData.Values)
@@ -42,11 +43,10 @@ namespace Gui_App
                 this.createTableRow(i);
             }
             SetProgrammingStatus("Done!");
-            
-
-
+            pictureBox1.Visible = false;
 
         }
+
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
