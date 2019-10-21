@@ -18,18 +18,16 @@ namespace Gui_App
         public Form1()
         {
             InitializeComponent();
-            this.Text = "Ember";
+            this.Text = "Ember Client Program";
             this.FetchData();
             
         }
 
         async void FetchData()
         {
-            SetProgrammingStatus("Getting data");
+            SetProgrammingStatus("Getting data and writing");
 
             await Api.Fetch();
-
-            SetProgrammingStatus("Making table");
 
             foreach (var i in Api.ApiData.Values)
             {
@@ -168,6 +166,11 @@ namespace Gui_App
         public void SetProgrammingStatus(string text)
         {
             label26.Text = text;
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
