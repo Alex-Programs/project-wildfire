@@ -34,11 +34,12 @@ namespace Gui_App
 
             SetProgrammingStatus("Fetching Data");
             await Api.Fetch();
+            pictureBox1.Visible = false;
+
 
             foreach (var i in Api.ApiData.Values)
             {
                 this.createTableRow(i);
-                pictureBox1.Visible = false;
             }
             SetProgrammingStatus("Done!");
             
