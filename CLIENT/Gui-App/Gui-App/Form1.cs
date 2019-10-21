@@ -155,6 +155,12 @@ namespace Gui_App
             //note: skipping day/night, version, 
         }
 
+
+        public void InDevError()
+        {
+            ShowMessage("This function is disabled pending further development", "Disabled", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
 
@@ -175,7 +181,7 @@ namespace Gui_App
             //VS won't let us delete this without throwing a fit, is meant to be FetchData. Run by force update.
             //pictureBox1.Visible = true;
             //remove table info
-            ShowMessage("This function is disabled pending further development", "Disabled", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            InDevError();
 
             //Disabled because I can't work out how to delete rows
             //FetchData();
@@ -184,6 +190,28 @@ namespace Gui_App
         public void ShowMessage(string message, string caption, MessageBoxButtons buttons, MessageBoxIcon icon)
         {
             MessageBox.Show(message, caption, buttons);
+        }
+
+
+
+        private void OpenMap_Click(object sender, EventArgs e)
+        {
+            InDevError();
+        }
+
+        private void CloseMap_Click(object sender, EventArgs e)
+        {
+            InDevError();
+        }
+
+        private void ForceUpdate(object sender, EventArgs e)
+        {
+            InDevError();
+        }
+
+        private void CheckApiStatus_Click(object sender, EventArgs e)
+        {
+            InDevError();
         }
     }
 }

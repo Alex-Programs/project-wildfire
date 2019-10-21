@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
@@ -71,10 +73,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -84,7 +85,6 @@
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -108,6 +108,16 @@
             this.panel1.Size = new System.Drawing.Size(899, 280);
             this.panel1.TabIndex = 11;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(899, 248);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.AutoSize = true;
@@ -122,7 +132,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 85F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 78F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
             this.tableLayoutPanel1.Controls.Add(this.label14, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label17, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label18, 3, 0);
@@ -165,7 +175,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(238, 0);
+            this.label18.Location = new System.Drawing.Point(237, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(32, 13);
             this.label18.TabIndex = 2;
@@ -174,7 +184,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(306, 0);
+            this.label19.Location = new System.Drawing.Point(305, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(35, 13);
             this.label19.TabIndex = 3;
@@ -183,7 +193,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(388, 0);
+            this.label20.Location = new System.Drawing.Point(387, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(30, 13);
             this.label20.TabIndex = 4;
@@ -192,7 +202,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(479, 0);
+            this.label21.Location = new System.Drawing.Point(478, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(30, 13);
             this.label21.TabIndex = 5;
@@ -201,7 +211,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(581, 0);
+            this.label22.Location = new System.Drawing.Point(580, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(61, 13);
             this.label22.TabIndex = 6;
@@ -210,7 +220,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(666, 0);
+            this.label23.Location = new System.Drawing.Point(665, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(42, 13);
             this.label23.TabIndex = 7;
@@ -219,7 +229,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(817, 0);
+            this.label25.Location = new System.Drawing.Point(816, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(28, 13);
             this.label25.TabIndex = 9;
@@ -228,11 +238,20 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(730, 0);
+            this.label24.Location = new System.Drawing.Point(729, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(77, 13);
             this.label24.TabIndex = 8;
             this.label24.Text = "Brightness_t31";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(14, 13);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "#";
             // 
             // groupBox2
             // 
@@ -295,6 +314,7 @@
             this.button3.TabIndex = 11;
             this.button3.Text = "Check API status";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.CheckApiStatus_Click);
             // 
             // button2
             // 
@@ -304,7 +324,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Force API Update";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Fetch);
+            this.button2.Click += new System.EventHandler(this.ForceUpdate);
             // 
             // textBox2
             // 
@@ -511,6 +531,7 @@
             this.button4.TabIndex = 1;
             this.button4.Text = "Close Map";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.CloseMap_Click);
             // 
             // button1
             // 
@@ -520,6 +541,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Open Map";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.OpenMap_Click);
             // 
             // label9
             // 
@@ -539,25 +561,6 @@
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Alert Status";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(14, 13);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "#";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(899, 248);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -581,6 +584,7 @@
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -595,7 +599,6 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
