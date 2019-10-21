@@ -173,7 +173,17 @@ namespace Gui_App
         private void Fetch(object sender, MouseEventArgs e)
         {
             //VS won't let us delete this without throwing a fit, is meant to be FetchData. Run by force update.
-            FetchData();
+            //pictureBox1.Visible = true;
+            //remove table info
+            ShowMessage("This function is disabled pending further development", "Disabled", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            //Disabled because I can't work out how to delete rows
+            //FetchData();
+        }
+
+        public void ShowMessage(string message, string caption, MessageBoxButtons buttons, MessageBoxIcon icon)
+        {
+            MessageBox.Show(message, caption, buttons);
         }
     }
 }
