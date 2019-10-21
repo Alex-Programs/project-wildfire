@@ -20,7 +20,7 @@ namespace Gui_App
             InitializeComponent();
             this.Text = "Ember";
             this.FetchData();
-            //label16.text = "Preparing to fetch data";
+            
         }
 
         async void FetchData()
@@ -126,6 +126,7 @@ namespace Gui_App
             //sets table values
             //note: skipping day/night, version,
             Debug.WriteLine("Received, adding now");
+            SetProgrammingStatus("Writing to columns...");
             createTableColumn(DataTableRowNumber, 0, ThisWildfire.latitude);
             createTableColumn(DataTableRowNumber, 1, ThisWildfire.longitude);
             createTableColumn(DataTableRowNumber, 2, ThisWildfire.scan);
@@ -136,6 +137,7 @@ namespace Gui_App
             createTableColumn(DataTableRowNumber, 7, ThisWildfire.version);
             createTableColumn(DataTableRowNumber, 8, ThisWildfire.bright_t31);
             createTableColumn(DataTableRowNumber, 9, ThisWildfire.frp);
+            SetProgrammingStatus("Finished writing. May repeat.");
 
             Debug.WriteLine("Added");
 

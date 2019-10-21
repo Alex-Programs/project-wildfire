@@ -23,6 +23,7 @@ namespace Gui_App
             try
             {
                 Debug.WriteLine("Requesting data from http://ember.benargo.co.uk...");
+                
                 WebResponse Response = await EmberRequest.GetResponseAsync();
                 using (StreamReader ResponseReader = new StreamReader(Response.GetResponseStream()))
                 {
