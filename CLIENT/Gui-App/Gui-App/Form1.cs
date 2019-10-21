@@ -25,17 +25,18 @@ namespace Gui_App
 
         async void FetchData()
         {
-            SetProgrammingStatus("Getting data and writing");
 
+            SetProgrammingStatus("Fetching Data");
             await Api.Fetch();
 
             foreach (var i in Api.ApiData.Values)
             {
                 this.createTableRow(i);
             }
-            SetProgrammingStatus("Table created");
+            SetProgrammingStatus("Done!");
 
-            Debug.WriteLine("Sent create signal");
+
+           
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -123,8 +124,6 @@ namespace Gui_App
 
             //sets table values
             //note: skipping day/night, version,
-            Debug.WriteLine("Received, adding now");
-            SetProgrammingStatus("Writing to columns...");
             createTableColumn(DataTableRowNumber, 0, ThisWildfire.latitude);
             createTableColumn(DataTableRowNumber, 1, ThisWildfire.longitude);
             createTableColumn(DataTableRowNumber, 2, ThisWildfire.scan);
@@ -135,22 +134,16 @@ namespace Gui_App
             createTableColumn(DataTableRowNumber, 7, ThisWildfire.version);
             createTableColumn(DataTableRowNumber, 8, ThisWildfire.bright_t31);
             createTableColumn(DataTableRowNumber, 9, ThisWildfire.frp);
-            SetProgrammingStatus("Finished writing. May repeat.");
-
-            Debug.WriteLine("Added");
 
             // Increment the row number...
             DataTableRowNumber = DataTableRowNumber + 1;
-            Debug.WriteLine($"DataTableRowNumber {DataTableRowNumber}");
         }
 
         public void createTableColumn(int RowNumber, int ColNumber, string ColumnValue)
         {
-            Debug.WriteLine("Creating table column...");
             Label newTableLabel = new Label();
             newTableLabel.Text = ColumnValue;
             tableLayoutPanel1.Controls.Add(newTableLabel, ColNumber, RowNumber);
-            Debug.WriteLine("Created table column.");
         }
 
         private void label14_Click(object sender, EventArgs e)
