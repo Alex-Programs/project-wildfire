@@ -165,5 +165,11 @@ namespace Gui_App
         {
 
         }
+
+        private void Fetch(object sender, MouseEventArgs e)
+        {
+            //VS won't let us delete this without throwing a fit, is meant to be FetchData. Run by force update.
+            FetchData();
+        }
     }
 }
