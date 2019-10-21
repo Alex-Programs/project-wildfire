@@ -1,8 +1,0 @@
-Docs:
-https://docs.python.org/3/
-
-Discord:
-https://pythondiscord.com/
-(Built in django lol)
-
-

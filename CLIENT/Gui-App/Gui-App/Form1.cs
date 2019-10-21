@@ -19,7 +19,7 @@ namespace Gui_App
         {
             InitializeComponent();
             this.Text = "Ember Client Program";
-            label27.Visible = true;
+            pictureBox1.Visible = true;
             this.FetchData();
             
         }
@@ -33,7 +33,7 @@ namespace Gui_App
             foreach (var i in Api.ApiData.Values)
             {
                 this.createTableRow(i);
-                label27.Visible = false;
+                pictureBox1.Visible = false;
             }
             SetProgrammingStatus("Done!");
             
