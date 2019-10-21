@@ -70,7 +70,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.TableScrollbar = new System.Windows.Forms.VScrollBar();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -507,19 +507,19 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.vScrollBar1);
+            this.panel1.Controls.Add(this.TableScrollbar);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Location = new System.Drawing.Point(6, 16);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(803, 272);
             this.panel1.TabIndex = 11;
             // 
-            // vScrollBar1
+            // TableScrollbar
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(776, 3);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 257);
-            this.vScrollBar1.TabIndex = 10;
+            this.TableScrollbar.Location = new System.Drawing.Point(776, 3);
+            this.TableScrollbar.Name = "TableScrollbar";
+            this.TableScrollbar.Size = new System.Drawing.Size(17, 257);
+            this.TableScrollbar.TabIndex = 10;
             // 
             // Form1
             // 
@@ -599,9 +599,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
+        public System.Windows.Forms.VScrollBar TableScrollbar;
+        public System.Windows.Forms.Label label26;
     }
 }
 
