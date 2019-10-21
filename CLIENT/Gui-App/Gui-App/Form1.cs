@@ -26,6 +26,11 @@ namespace Gui_App
 
         async void FetchData()
         {
+            SetProgrammingStatus("Resetting Table");
+            DataTableRowNumber = 0;
+            ResetTable();
+            CreateHeader();
+            DataTableRowNumber = 1;
 
             SetProgrammingStatus("Fetching Data");
             await Api.Fetch();
@@ -143,6 +148,7 @@ namespace Gui_App
             DataTableRowNumber = DataTableRowNumber + 1;
         }
 
+
         public void createTableColumn(int RowNumber, int ColNumber, string ColumnValue)
         {
             Label newTableLabel = new Label();
@@ -206,12 +212,35 @@ namespace Gui_App
 
         private void ForceUpdate(object sender, EventArgs e)
         {
-            InDevError();
+            FetchData();
         }
 
         private void CheckApiStatus_Click(object sender, EventArgs e)
         {
             InDevError();
+        }
+
+        public void ResetTable()
+        {
+            //tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.Controls.Clear();
+
+        }
+
+        public void CreateHeader()
+        {
+            //setting header again
+            createTableColumn(DataTableRowNumber, 0, "#");
+            createTableColumn(DataTableRowNumber, 1, "Latitude");
+            createTableColumn(DataTableRowNumber, 2, "Longitude");
+            createTableColumn(DataTableRowNumber, 3, "Scan");
+            createTableColumn(DataTableRowNumber, 4, "Track");
+            createTableColumn(DataTableRowNumber, 5, "Acq_Date");
+            createTableColumn(DataTableRowNumber, 6, "Acq_Time");
+            createTableColumn(DataTableRowNumber, 7, "Confidence");
+            createTableColumn(DataTableRowNumber, 8, "Version");
+            createTableColumn(DataTableRowNumber, 9, "Brightness_t31");
+            createTableColumn(DataTableRowNumber, 10, "FRP");
         }
     }
 }
