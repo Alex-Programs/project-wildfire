@@ -70,6 +70,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -106,7 +107,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.ColumnCount = 10;
+            this.tableLayoutPanel1.ColumnCount = 11;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.29534F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.70466F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
@@ -117,16 +119,17 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 78F));
-            this.tableLayoutPanel1.Controls.Add(this.label14, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label17, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label18, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label19, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label20, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label21, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label22, 6, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label23, 7, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label25, 9, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label24, 8, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label14, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label17, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label18, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label19, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label20, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label21, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label22, 7, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label23, 8, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label25, 10, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label24, 9, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label10, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -138,7 +141,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(3, 0);
+            this.label14.Location = new System.Drawing.Point(41, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(45, 13);
             this.label14.TabIndex = 0;
@@ -149,7 +152,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(119, 0);
+            this.label17.Location = new System.Drawing.Point(137, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(54, 13);
             this.label17.TabIndex = 1;
@@ -533,11 +536,20 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Alert Status";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(14, 13);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "#";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 461);
+            this.ClientSize = new System.Drawing.Size(1076, 463);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.groupBox4);
@@ -547,7 +559,7 @@
             this.Controls.Add(this.groupBox3);
             this.ForeColor = System.Drawing.Color.Black;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1092, 500);
+            this.MaximumSize = new System.Drawing.Size(1092, 502);
             this.MinimumSize = new System.Drawing.Size(933, 433);
             this.Name = "Form1";
             this.Text = "Ember Client Program";
@@ -618,6 +630,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label10;
     }
 }
 

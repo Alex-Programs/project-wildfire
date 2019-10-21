@@ -25,13 +25,17 @@ namespace Gui_App
 
         async void FetchData()
         {
+            //int RowNumber = 0;
 
             SetProgrammingStatus("Fetching Data");
             await Api.Fetch();
 
             foreach (var i in Api.ApiData.Values)
             {
-                this.createTableRow(i);
+                //string RowNumberString = RowNumber.ToString();
+                this.createTableRow(i); //, RowNumberString);
+                //RowNumber = RowNumber + 1;
+
             }
             SetProgrammingStatus("Done!");
 
@@ -124,16 +128,17 @@ namespace Gui_App
 
             //sets table values
             //note: skipping day/night, version,
-            createTableColumn(DataTableRowNumber, 0, ThisWildfire.latitude);
-            createTableColumn(DataTableRowNumber, 1, ThisWildfire.longitude);
-            createTableColumn(DataTableRowNumber, 2, ThisWildfire.scan);
-            createTableColumn(DataTableRowNumber, 3, ThisWildfire.track);
-            createTableColumn(DataTableRowNumber, 4, ThisWildfire.acq_date);
-            createTableColumn(DataTableRowNumber, 5, ThisWildfire.acq_time);
-            createTableColumn(DataTableRowNumber, 6, ThisWildfire.confidence);
-            createTableColumn(DataTableRowNumber, 7, ThisWildfire.version);
-            createTableColumn(DataTableRowNumber, 8, ThisWildfire.bright_t31);
-            createTableColumn(DataTableRowNumber, 9, ThisWildfire.frp);
+            createTableColumn(DataTableRowNumber, 0, DataTableRowNumber.ToString());
+            createTableColumn(DataTableRowNumber, 1, ThisWildfire.latitude);
+            createTableColumn(DataTableRowNumber, 2, ThisWildfire.longitude);
+            createTableColumn(DataTableRowNumber, 3, ThisWildfire.scan);
+            createTableColumn(DataTableRowNumber, 4, ThisWildfire.track);
+            createTableColumn(DataTableRowNumber, 5, ThisWildfire.acq_date);
+            createTableColumn(DataTableRowNumber, 6, ThisWildfire.acq_time);
+            createTableColumn(DataTableRowNumber, 7, ThisWildfire.confidence);
+            createTableColumn(DataTableRowNumber, 8, ThisWildfire.version);
+            createTableColumn(DataTableRowNumber, 9, ThisWildfire.bright_t31);
+            createTableColumn(DataTableRowNumber, 10, ThisWildfire.frp);
 
             // Increment the row number...
             DataTableRowNumber = DataTableRowNumber + 1;
