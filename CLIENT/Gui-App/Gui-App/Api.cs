@@ -16,6 +16,7 @@ namespace Gui_App
         public static async Task Fetch()
         {
             //Fetch data from ben's api, code taken from project Crazy Norwegian
+
             HttpWebRequest EmberRequest = (HttpWebRequest)WebRequest.Create("http://ember.benargo.co.uk/");
             EmberRequest.Method = "GET";
             EmberRequest.Accept = "application/json";

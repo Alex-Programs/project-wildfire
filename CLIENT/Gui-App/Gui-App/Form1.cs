@@ -25,11 +25,18 @@ namespace Gui_App
 
         async void FetchData()
         {
+            SetProgrammingStatus("Getting data");
+
             await Api.Fetch();
+
+            SetProgrammingStatus("Making table");
+
             foreach (var i in Api.ApiData.Values)
             {
                 this.createTableRow(i);
             }
+            SetProgrammingStatus("Table created");
+
             Debug.WriteLine("Sent create signal");
         }
 
@@ -149,6 +156,16 @@ namespace Gui_App
         private void label14_Click(object sender, EventArgs e)
         {
             //note: skipping day/night, version, 
+        }
+
+        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public void SetProgrammingStatus(string text)
+        {
+            label26.Text = text;
         }
     }
 }
