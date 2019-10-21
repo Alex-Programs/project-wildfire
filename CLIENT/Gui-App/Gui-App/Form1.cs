@@ -19,28 +19,27 @@ namespace Gui_App
         {
             InitializeComponent();
             this.Text = "Ember Client Program";
+            label27.Visible = true;
             this.FetchData();
             
         }
 
         async void FetchData()
         {
-            //int RowNumber = 0;
 
             SetProgrammingStatus("Fetching Data");
             await Api.Fetch();
 
             foreach (var i in Api.ApiData.Values)
             {
-                //string RowNumberString = RowNumber.ToString();
-                this.createTableRow(i); //, RowNumberString);
-                //RowNumber = RowNumber + 1;
-
+                this.createTableRow(i);
+                label27.Visible = false;
             }
             SetProgrammingStatus("Done!");
+            
 
 
-           
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
