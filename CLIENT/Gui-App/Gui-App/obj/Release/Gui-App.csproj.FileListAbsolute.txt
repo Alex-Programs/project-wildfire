@@ -1,0 +1,12 @@
+C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\bin\Release\Gui-App.exe.config
+C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\bin\Release\Gui-App.exe
+C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\bin\Release\Gui-App.pdb
+C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\bin\Release\Newtonsoft.Json.dll
+C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\bin\Release\Newtonsoft.Json.xml
+C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Release\Gui-App.csprojAssemblyReference.cache
+C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Release\Gui_App.Form1.resources
+C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Release\Gui_App.Properties.Resources.resources
+C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Release\Gui-App.csproj.GenerateResource.cache
+C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Release\Gui-App.csproj.CopyComplete
+C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Release\Gui-App.exe
+C:\Users\a-chambers\Documents\GitHub\project-wildfire\CLIENT\Gui-App\Gui-App\obj\Release\Gui-App.pdb

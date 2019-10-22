@@ -44,15 +44,5 @@ namespace Gui_App
             }
         }
 
-        public void Parse()
-        {
-            //parse data into *
-        }
-
-
-        //public Dictionary Export()
-        //{
-        //    //export data as a dict
-        //}
     }
 }

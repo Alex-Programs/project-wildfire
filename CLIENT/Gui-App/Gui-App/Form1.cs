@@ -20,16 +20,21 @@ namespace Gui_App
             InitializeComponent();
             this.Text = "Ember Client Program";
             pictureBox1.Visible = true;
+
             this.FetchData();
+
         }
 
         async void FetchData()
         {
+
             pictureBox1.Visible = true;
             SetProgrammingStatus("Resetting Table");
             DataTableRowNumber = 0;
+
             ResetTable();
             CreateHeader();
+
             DataTableRowNumber = 1;
 
             SetProgrammingStatus("Fetching Data");
@@ -43,7 +48,6 @@ namespace Gui_App
             }
             SetProgrammingStatus("Done!");
             pictureBox1.Visible = false;
-
         }
 
 
@@ -169,7 +173,7 @@ namespace Gui_App
 
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
-
+            timer1.Interval = (Decimal.ToInt32(numericUpDown3.Value)) * 1000;
         }
 
         public void SetProgrammingStatus(string text)
@@ -182,16 +186,6 @@ namespace Gui_App
 
         }
 
-        private void Fetch(object sender, MouseEventArgs e)
-        {
-            //VS won't let us delete this without throwing a fit, is meant to be FetchData. Run by force update.
-            //pictureBox1.Visible = true;
-            //remove table info
-            InDevError();
-
-            //Disabled because I can't work out how to delete rows
-            //FetchData();
-        }
 
         public void ShowMessage(string message, string caption, MessageBoxButtons buttons, MessageBoxIcon icon)
         {
@@ -212,12 +206,8 @@ namespace Gui_App
 
         private void ForceUpdate(object sender, EventArgs e)
         {
-            FetchData();
-        }
-
-        private void CheckApiStatus_Click(object sender, EventArgs e)
-        {
-            InDevError();
+            //This function shouldn't be allowed to run while fetching 
+            FetchData();   
         }
 
         public void ResetTable()
@@ -241,6 +231,16 @@ namespace Gui_App
             createTableColumn(DataTableRowNumber, 8, "Version");
             createTableColumn(DataTableRowNumber, 9, "Brightness_t31");
             createTableColumn(DataTableRowNumber, 10, "FRP");
+        }
+
+        private void FetchDataTimer(object sender, EventArgs e)
+        {
+            FetchData();
+        }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
